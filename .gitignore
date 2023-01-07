@@ -1,0 +1,17 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/EviCRM/obj
+/EviCRM/appsettings.Development.json
+/EviCRM.Alexandra/obj
+/EviCRM.Alexandra.TsrClient/obj
+/EviCRM.Core.Db/obj
+/EviCRM.Core.DomainCore/obj
+/EviCRM.Core.IntegrationService/obj
+/EviCRM.Core.IO/obj
+/EviCRM.IntegrationServiceClient/obj
+/EviCRM.Landing/obj/Debug/net6.0
+/EviCRM.Portal/obj
+/EviCRM.WelcomePage/obj
