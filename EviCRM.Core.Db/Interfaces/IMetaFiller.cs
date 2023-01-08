@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EviCRM.Core.Db.Interfaces
+﻿namespace EviCRM.Core.Db.Interfaces
 {
     public interface IMetaFiller
     {
+        /// <summary>
+        /// Идентификатор
+        /// </summary>
+        public Guid Id { get; set; }
+
         /// <summary>
         /// Когда была добавлена запись
         /// </summary>

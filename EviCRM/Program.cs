@@ -22,8 +22,8 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddSingleton<WeatherForecastService>();
 
-builder.Services.AddDbContext<CoreContext>(_ => _.UseNpgsql(builder.Configuration.GetConnectionString(nameof(CoreContext))));
-builder.Services.AddDbContext<AlexandraContext>(_ => _.UseNpgsql(builder.Configuration.GetConnectionString(nameof(AlexandraContext))));
+builder.Services.AddDbContext<CoreContext>(_ => _.UseNpgsql(builder.Configuration.GetConnectionString(nameof(CoreContext)),o=>o.UseNetTopologySuite()));
+builder.Services.AddDbContext<AlexandraContext>(_ => _.UseNpgsql(builder.Configuration.GetConnectionString(nameof(AlexandraContext)), o => o.UseNetTopologySuite()));
 builder.Services.AddDbContext<CacheContext>(_ => _.UseNpgsql(builder.Configuration.GetConnectionString(nameof(CacheContext))));
 builder.Services.AddDbContext<IntegrationContext>(_ => _.UseNpgsql(builder.Configuration.GetConnectionString(nameof(IntegrationContext))));
 builder.Services.AddDbContext<SecurityContext>(_ => _.UseNpgsql(builder.Configuration.GetConnectionString(nameof(SecurityContext))));

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace EviCRM.Core.Db.Models
 {
-    public enum PersonalCompletionStatus
+    public enum PersonalStatusEnum
     {
-
+        Waiting,
+        Approved,
+        Pending,
+        Delayed,
+        Completed,
+        Canceled,
+        Failed,
     }
-
-    public enum GlobalCompletionStatus
-    {
-
-    }
-
 }
