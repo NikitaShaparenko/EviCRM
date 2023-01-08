@@ -7,20 +7,30 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Cache\" />
+    <Compile Remove="Context.cs" />
+    <Compile Remove="MySQL_Schematics.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Entities\Integration\" />
     <Folder Include="Entities\Security\" />
     <Folder Include="Migrations\" />
+    <Folder Include="Migrations\Alexandra\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="NetTopologySuite" Version="2.5.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.1" />
   </ItemGroup>
 

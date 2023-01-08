@@ -15,3 +15,12 @@
 /EviCRM.Landing/obj/Debug/net6.0
 /EviCRM.Portal/obj
 /EviCRM.WelcomePage/obj
+EviCRM/appsettings.json
+EviCRM/bin/Debug/net6.0/appsettings.Development.json
+EviCRM/bin/Debug/net6.0/appsettings.json
+EviCRM/appsettings.json
+*.json
+EviCRM.Landing/obj/EviCRM.Landing.csproj.nuget.dgspec.json
+EviCRM.Landing/obj/EviCRM.Landing.csproj.nuget.g.props
+EviCRM.Landing/obj/project.assets.json
+EviCRM.Landing/obj/project.nuget.cache
