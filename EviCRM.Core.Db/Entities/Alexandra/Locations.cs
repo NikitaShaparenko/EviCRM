@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EviCRM.Core.Db.Entities.Core;
 using EviCRM.Core.Db.Interfaces;
 
 namespace EviCRM.Core.Db.Entities.Alexandra
