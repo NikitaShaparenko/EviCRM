@@ -1,4 +1,5 @@
 ﻿using EviCRM.Core.Db.Interfaces;
+using EviCRM.Core.Db.Models;
 using System.ComponentModel.DataAnnotations;
 
 namespace EviCRM.Core.Db.Entities.Core
@@ -10,6 +11,11 @@ namespace EviCRM.Core.Db.Entities.Core
         /// </summary>
         [Key]
         public Guid Id { get; set; }
+
+        /// <summary>
+        /// Тип аватарки
+        /// </summary>
+        public AvatarTypeEnum Type { get; set; }
 
         /// <summary>
         /// Локальный путь к аватарке

@@ -1,7 +1,6 @@
 ﻿using EviCRM.Core.Db.Entities.Core;
 using EviCRM.Core.Db.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
 
 namespace EviCRM.Core.Db.Contexts
 {
@@ -57,8 +56,6 @@ namespace EviCRM.Core.Db.Contexts
             modelBuilder.Entity<Map>()
                 .Property(_ => _.Location)
                 .HasColumnType("geography (point)");
-
-
         }
     }
 }
